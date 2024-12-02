@@ -1,0 +1,52 @@
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+
+  .vertical-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  .yey {
+    background: url(../img/hero.jpg);
+    background-repeat: none;
+    background-size: cover;
+    width: 100%;
+  }
+
+  .blur-container {
+    padding: 0px 40px;
+    background: rgba(0, 0, 0, 0.457); /* Warna redup */
+    backdrop-filter: blur(1.5px); /* Efek blur */
+    border-radius: 10px; /* Sudut melengkung */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.071); /* Bayangan */
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 100%;
+  }
+
+  .logo-container img {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: scale(0.9);
+    opacity: 0.8;
+  }
+
+  .logo-container img:hover {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  
